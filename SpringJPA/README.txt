@@ -1,6 +1,12 @@
-Emplyee Manangement System:
+Employee Management System demonstrates JPA 2.0s latest features like:
 
-Use Cases:
+1. Criteria API
+2. Additions APIs on EntityManager
+3. Additional API on Query
+4. New Bean Validation Support
+5. Metamodel APIs
+
+Use Cases demonstrated:
 
 	1. Add Employee
 	2. Update Employee
@@ -12,14 +18,65 @@ Use Cases:
 		4.3 Find Employee by Gender
 		4.4 Find Employee by Salary
 	
+Refer to DAO implementation classes to see all three types of data access strategies using:
 
-Following jars need to be installed in local maven repository:
+ 	1. Criteria API
+ 	2. Dynamic Queries
+ 	3. Static Queries
+ 	
+ Queries with Other Conditional Expressions:
+ 
+ 	1. The LIKE Expression
+ 	2. The BETWEEN Expression
+ 	3. Comparison Operators
+ 	4. The GREATER THAN Expression
+ 	5. The LESS THAN Expression
+ 	6. The IN Expression
+ 	7. The FETCH JOIN Expression
+ 	
+ 	
+ Demo Environment Details
+	
+	1. ORM : JPA 2.0
+	2. ORM JPA Persistence Provider - Hibernate 3.5.0
+	3. Hibernate JPA MetaModel Generater to write TypeSafe Dynamic Quiries using Criteria APIs
+	4. Maven PlugIn (hibernate-jpamodelgen 1.0.0.Final)
 
-mvn install:install-file -DgroupId=antlr -DartifactId=antlr -Dversion=2.7.6 -Dpackaging=jar -Dfile=<downloaded_location>\antlr-2.7.6.jar
-mvn install:install-file -DgroupId=commons-collections -DartifactId=commons-collections -Dversion=3.1 -Dpackaging=jar -Dfile=<downloaded_location>\commons-collections-3.1.jar
-mvn install:install-file -DgroupId=dom4j -DartifactId=dom4j -Dversion=1.6.1 -Dpackaging=jar -Dfile=<downloaded_location>\dom4j-1.6.1.jar
-mvn install:install-file -DgroupId=javassist -DartifactId=javassist -Dversion=3.9.0.GA -Dpackaging=jar -Dfile=<downloaded_location>\javassist-3.9.0.GA.jar
-mvn install:install-file -DgroupId=jta -DartifactId=jta -Dversion=1.1 -Dpackaging=jar -Dfile=<downloaded_location>\jta-1.1.jar
-mvn install:install-file -DgroupId=slf4j-api -DartifactId=slf4j-api -Dversion=1.5.8 -Dpackaging=jar -Dfile=<downloaded_location>\slf4j-api-1.5.8.jar
-mvn install:install-file -DgroupId=javax.persistence -DartifactId=hibernate-jpa -Dversion=2.0-api-1.0.0.Final -Dpackaging=jar -Dfile=<downloaded_location>\hibernate-jpa-2.0-api-1.0.0.Final.jar
-mvn install:install-file -DgroupId=hibernate -DartifactId=hibernate3 -Dversion=1.0 -Dpackaging=jar -Dfile=<downloaded_location>\hibernate3.jar	
+	5. Spring Framework 3.0.2.RELEASE
+	6. Oracle Weblogic - 10.3
+	7. Database - Oracle 9i
+	8. Maven is used to simplify the build processes
+	9. Apache Tile Framework
+	10. Java Script
+	11. CSS
+	
+
+
+Configuration Files
+
+	1. Oracle Weblogic 10.3 doesn't support JEE 6 at the moment (as of May 2010), then how to get JPA 2.0 working on weblogic:
+
+  		weblogic-application.xml
+
+	2. JPA 2.0 and Spring 3.0.2 integration (Application Context XMLs)
+
+  		2.1. Data Access Object (DAO) Layer: jpa-dao-config.xml (JPA 2.0 is integrated in DAO layer)
+  		2.2. Service (Business) Layer: service-config.xml
+  		2.3. Web Layer (Spring Web MVC): mvc-config.xml
+  		
+ JPA Entities
+	
+ 		1. Employee
+ 		2. Address
+ 		3. Degree
+ 		4. JobTitle
+ 		5. PhoneNumber
+ 		6. EmailAddress (Embedable)
+		7. EmploymentPeriod (Embedable)
+		8. Gender (Java Enum)
+
+JPA Persistence
+	
+		1. persistence.xml
+		
+		
