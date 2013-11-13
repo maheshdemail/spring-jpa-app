@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	
+	<!-- Pages -->
+	<definition name="views/welcome" extends="standard-layout">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="body" value="/WEB-INF/views/welcome.jsp" />
+	</definition>
+	<definition name="views/addUpdateEmployee" extends="standard-layout">
+		<put-attribute name="title" value="Add Employee" />
+		<put-attribute name="body" value="/WEB-INF/views/add_update_employee.jsp" />
+	</definition>
+	<definition name="views/viewAllEmployees" extends="standard-layout">
+		<put-attribute name="title" value="View All Employees" />
+		<put-attribute name="body" value="/WEB-INF/views/view_employees.jsp" />
+	</definition>
+	<definition name="views/searchEmployee-OrderBy" extends="standard-layout">
+		<put-attribute name="title" value="Search All Employees - ORDER BY" />
+		<put-attribute name="body" value="/WEB-INF/views/order_by.jsp" />
+	</definition>
+	<definition name="views/searchEmployee-Like" extends="standard-layout">
+		<put-attribute name="title" value="Search Employees by Name" />
+		<put-attribute name="body" value="/WEB-INF/views/like.jsp" />
+	</definition>
+	<definition name="views/searchEmployees-Between" extends="standard-layout">
+		<put-attribute name="title" value="Search Employees by Salaries" />
+		<put-attribute name="body" value="/WEB-INF/views/between.jsp" />
+	</definition>
+	<definition name="views/searchEmployees-LessThan" extends="standard-layout">
+		<put-attribute name="title" value="Search Employees by Salaries" />
+		<put-attribute name="body" value="/WEB-INF/views/less_than.jsp" />
+	</definition>
+	<definition name="views/searchEmployees-GreaterThan" extends="standard-layout">
+		<put-attribute name="title" value="Search Employees by Salaries" />
+		<put-attribute name="body" value="/WEB-INF/views/greater_than.jsp" />
+	</definition>
+	<definition name="views/searchEmployees-In" extends="standard-layout">
+		<put-attribute name="title" value="Search Employees by Gender" />
+		<put-attribute name="body" value="/WEB-INF/views/in.jsp" />
+	</definition>
+	<definition name="views/searchEmployees-JoinFetch" extends="standard-layout">
+		<put-attribute name="title" value="Search Employees - Join Fetch" />
+		<put-attribute name="body" value="/WEB-INF/views/join_fetch.jsp" />
+	</definition>
+	
+	<definition name="views/designArchitecture" template="/WEB-INF/views/design_architecture.jsp" />
+	
+	<definition name="views/error" extends="standard-layout">
+		<put-attribute name="title" value="ERROR" />
+		<put-attribute name="body" value="/WEB-INF/views/error.jsp" />
+	</definition>
+</tiles-definitions>

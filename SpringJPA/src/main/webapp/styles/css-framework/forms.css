@@ -1,0 +1,108 @@
+/* FORM ELEMENTS */
+form {
+	margin: 0;
+	padding: 0;
+}
+
+form div,form p {
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+label {
+	font-weight: bold;
+}
+
+fieldset {
+	padding: 5px 10px;
+	margin: 0 0 1.5em 0;
+	border: 1px solid #eee;
+}
+
+fieldset legend {
+	margin: 0 0 0 0px;
+	padding: 0;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #666;
+	background-color: white;
+}
+
+* html fieldset legend {
+	margin: 0 0 10px -10px;
+}
+
+fieldset ul {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	list-style: none;
+}
+
+fieldset ul li {
+	margin: 0 0 0.5em 0;
+	padding: 0;
+	list-style: none;
+}
+
+input,select,textarea {
+	margin: 0;
+	padding: 2px;
+	font-size: 1em;
+	font-family: arial, helvetica, verdana, sans-serif;
+}
+
+input,select {
+	vertical-align: middle;
+}
+
+textarea {
+	width: 200px;
+	height: 8em;
+}
+
+input.check {
+	width: auto;
+	height: auto;
+	margin: 0;
+	border: none;
+}
+
+input.radio {
+	width: auto;
+	height: auto;
+	margin: 0;
+	border: none;
+}
+
+input.file {
+	width: 250px;
+	height: auto;
+}
+
+input.readonly {
+	background-color: transparent;
+	border: none;
+}
+
+input.button {
+	width: 10em;
+	background-color: #ddd;
+	border: 1px solid black;
+}
+
+input.image {
+	width: auto;
+	height: auto;
+	border: none;
+}
+
+form div.submit {
+	margin: 1em 0;
+}
+
+form div.submit input {
+	width: 15em;
+	height: 2em;
+}
+/* END FORM ELEMENTS */

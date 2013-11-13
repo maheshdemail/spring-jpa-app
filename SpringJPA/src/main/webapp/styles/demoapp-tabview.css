@@ -1,0 +1,197 @@
+.demoapp-navset .demoapp-nav li,.demoapp-navset .demoapp-navset-top .demoapp-nav li,.demoapp-navset .demoapp-navset-bottom .demoapp-nav li
+	{
+	margin: 0 0.5em 0 0;
+}
+
+.demoapp-navset-left .demoapp-nav li,.demoapp-navset-right .demoapp-nav li
+	{
+	margin: 0 0 0.5em;
+}
+
+.demoapp-navset .demoapp-content .demoapp-hidden
+	{
+	display: none;
+}
+
+.demoapp-navset .demoapp-navset-left .demoapp-nav,.demoapp-navset .demoapp-navset-right .demoapp-nav,.demoapp-navset-left .demoapp-nav,.demoapp-navset-right .demoapp-nav
+	{
+	width: 6em;
+}
+
+.demoapp-navset-top .demoapp-nav,.demoapp-navset-bottom .demoapp-nav
+	{
+	width: auto;
+}
+
+.demoapp-navset .demoapp-navset-left,.demoapp-navset-left
+	{
+	padding: 0 0 0 6em;
+}
+
+.demoapp-navset-right {
+	padding: 0 6em 0 0;
+}
+
+.demoapp-navset-top,.demoapp-navset-bottom {
+	padding: auto;
+}
+
+.demoapp-nav,.demoapp-nav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.demoapp-navset li em {
+	font-style: normal;
+}
+
+.demoapp-navset {
+	position: relative;
+	zoom: 1;
+}
+
+.demoapp-navset .demoapp-content {
+	zoom: 1;
+}
+
+.demoapp-navset .demoapp-nav li,.demoapp-navset .demoapp-navset-top .demoapp-nav li,.demoapp-navset .demoapp-navset-bottom .demoapp-nav li
+	{
+	display: inline-block;
+	display: -moz-inline-stack; *
+	display: inline;
+	vertical-align: bottom;
+	cursor: pointer;
+	zoom: 1;
+}
+
+.demoapp-navset-left .demoapp-nav li,.demoapp-navset-right .demoapp-nav li
+	{
+	display: block;
+}
+
+.demoapp-navset .demoapp-nav a {
+	position: relative;
+}
+
+.demoapp-navset .demoapp-nav li a,.demoapp-navset-top .demoapp-nav li a,.demoapp-navset-bottom .demoapp-nav li a
+	{
+	display: block;
+	display: inline-block;
+	vertical-align: bottom;
+	zoom: 1;
+}
+
+.demoapp-navset-left .demoapp-nav li a,.demoapp-navset-right .demoapp-nav li a
+	{
+	display: block;
+}
+
+.demoapp-navset-bottom .demoapp-nav li a {
+	vertical-align: text-top;
+}
+
+.demoapp-navset .demoapp-nav li a em,.demoapp-navset-top .demoapp-nav li a em,.demoapp-navset-bottom .demoapp-nav li a em
+	{
+	display: block;
+}
+
+.demoapp-navset .demoapp-navset-left .demoapp-nav,.demoapp-navset .demoapp-navset-right .demoapp-nav,.demoapp-navset-left .demoapp-nav,.demoapp-navset-right .demoapp-nav
+	{
+	position: absolute;
+	z-index: 1;
+}
+
+.demoapp-navset-top .demoapp-nav,.demoapp-navset-bottom .demoapp-nav
+	{
+	position: static;
+}
+
+.demoapp-navset .demoapp-navset-left .demoapp-nav,.demoapp-navset-left .demoapp-nav
+	{
+	left: 0;
+	right: auto;
+}
+
+.demoapp-navset .demoapp-navset-right .demoapp-nav,.demoapp-navset-right .demoapp-nav
+	{
+	right: 0;
+	left: auto;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-nav,.demoapp-skin-sam .demoapp-navset .demoapp-navset-top .demoapp-nav
+	{
+	border: solid #2647a0;
+	border-width: 0 0 5px;
+	Xposition: relative;
+	zoom: 1;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-nav li,.demoapp-skin-sam .demoapp-navset .demoapp-navset-top .demoapp-nav li
+	{
+	margin: 0 0.16em 0 0;
+	padding: 1px 0 0;
+	zoom: 1;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-nav .selected,.demoapp-skin-sam .demoapp-navset .demoapp-navset-top .demoapp-nav .selected
+	{
+	margin: 0 0.16em -1px 0;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-nav a,.demoapp-skin-sam .demoapp-navset .demoapp-navset-top .demoapp-nav a
+	{
+	background: #d8d8d8 url(../images/tab.png) repeat-x;
+	border: solid #a3a3a3;
+	border-width: 0 1px;
+	color: #000;
+	position: relative;
+	text-decoration: none;
+}
+/** border-width: 1px 0 0; **/
+.demoapp-skin-sam .demoapp-navset .demoapp-nav a em,.demoapp-skin-sam .demoapp-navset .demoapp-navset-top .demoapp-nav a em
+	{
+	border: solid #a3a3a3;
+	border-width: 2px 0 0;
+	cursor: hand;
+	padding: 0.25em .75em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: -1px;
+	position: relative;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-nav .selected a,.demoapp-skin-sam .demoapp-navset .demoapp-nav .selected a:focus,.demoapp-skin-sam .demoapp-navset .demoapp-nav .selected a:hover
+	{
+	background: #2647a0 url(../images/tab.png) repeat-x left -1400px;
+	color: #fff;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-nav a:hover,.demoapp-skin-sam .demoapp-navset .demoapp-nav a:focus
+	{
+	background: #bfdaff url(../images/tab.png) repeat-x left -1300px;
+	outline: 0;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-nav .selected a em
+	{
+	padding: 0.35em 0.75em;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-nav .selected a,.demoapp-skin-sam .demoapp-navset .demoapp-nav .selected a em
+	{
+	border-color: #243356;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-content
+	{
+	background: #FCFCFC;
+}
+
+.demoapp-skin-sam .demoapp-navset .demoapp-content,.demoapp-skin-sam .demoapp-navset .demoapp-navset-top .demoapp-content
+	{
+	border: 1px solid #808080;
+	border-top-color: #243356;
+	padding: 0.25em 0.5em;
+}

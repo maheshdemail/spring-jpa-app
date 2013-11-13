@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wls:weblogic-web-app xmlns:wls="http://www.bea.com/ns/weblogic/weblogic-web-app" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://www.bea.com/ns/weblogic/weblogic-web-app http://www.bea.com/ns/weblogic/weblogic-web-app/1.0/weblogic-web-app.xsd">
+    <wls:jsp-descriptor>
+        <wls:keepgenerated>true</wls:keepgenerated>
+        <wls:working-dir>C:\Workspaces\OpenSource\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\gateway\work\GatewayJUG</wls:working-dir>
+        <wls:debug>true</wls:debug>
+    </wls:jsp-descriptor>
+    <wls:context-root>GatewayJUG</wls:context-root>
+</wls:weblogic-web-app>

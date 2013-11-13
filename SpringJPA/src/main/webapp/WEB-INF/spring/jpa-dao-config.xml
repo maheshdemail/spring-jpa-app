@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context-3.0.xsd  http://www.springframework.org/schema/tx  http://www.springframework.org/schema/tx/spring-tx-3.0.xsd  http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+	<!-- 
+		Lookup Datasource
+	-->
+	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/Gateway" />
+	
+	<!-- 
+		Create EntityManagerFactory for Java Persistence APIs 
+	-->
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean" p:dataSource-ref="dataSource">
+		<property name="persistenceUnitName" value="GatewayJUG" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"
+					p:databasePlatform="org.hibernate.dialect.Oracle9iDialect" p:showSql="false" p:database="ORACLE" />
+		</property>
+	</bean>
+	
+	<!-- 
+		Load JPA Transaction Manager for a single JPA EntityManagerFactory
+	-->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"  p:entityManagerFactory-ref="entityManagerFactory" />
+
+	<!-- 
+		To Processes @PersistenceUnit and @PersistenceContext JEE annotations 
+	-->
+	<bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+	
+	<!--
+		- Post-processor to perform exception translation on @Repository classes (from native
+		  exceptions such as JPA PersistenceExceptions to Spring's DataAccessException hierarchy).
+	-->
+	<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
+	
+	<!-- 
+		Load Data Access Layer (DAOs) which are marked using @Repository annotation 
+	-->
+	<context:component-scan base-package="com.gatewayjug.demoapp.dao.impl.jpa" />
+	
+	
+	
+</beans>
